@@ -1,0 +1,31 @@
+
+<div class="wrap_full wrap_padd_40">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+          <h2>expipescustom works!</h2>
+
+          <input type="button" (click)="changeContent();" value="Change Content">
+          <br>
+          <br><br>
+          <input type="text" [(ngModel)]="limit">  <br> Limit : {{limit}} <br>
+          <p>Summary : {{content_ori | summary:'8'}}</p>
+          
+      </div>
+      <div class="col-md-6">
+        <h2>Two way data binding</h2>
+        <form (submit)="login(ipvalue)" #ipvalue="ngForm">
+          <input type="text" name="username" [(ngModel)]="username" autocomplete="off">
+          <input type="submit" class="button" value="Add">
+      </form>
+        <br>
+        <h4>{{username}}</h4>
+
+    </div>
+      
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+
+

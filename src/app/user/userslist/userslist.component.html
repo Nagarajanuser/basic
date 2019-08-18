@@ -1,0 +1,38 @@
+
+
+
+
+<div class="wrap_full  ">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-md-12">
+
+          <table class="table_full">
+            
+            <tr>
+              <th>Sl no</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Password</th>
+              <th>Delete</th>
+              <th>Update</th>
+            </tr>
+
+
+            <tr *ngFor="let userslistss of userslist; index as i">
+              <td>{{i+1}}</td>
+              <td>{{userslistss.username}}</td>
+              <td>{{userslistss.useremail}}</td>
+              <td>{{userslistss.userpwd}}</td>
+              <td><button (click)="deleteUser(userslistss._id)">Delete</button></td>
+              <td><button routerLink="/updateuser/{{userslistss._id}}" >Update</button></td>
+            </tr>
+
+          </table>
+            
+        </div>
+
+      </div>
+    </div>
+  </div>

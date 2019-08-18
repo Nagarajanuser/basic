@@ -1,0 +1,40 @@
+
+
+<div class="wrap_full wrap_padd_40">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 ">
+        
+        <h3 class="mar_0">
+         <b>To Titlecase :</b> {{totitle | titlecase}}
+        </h3>
+<hr>
+        <p> <b>To Uppercase :</b> {{toupcase | uppercase}}</p>
+        <p><b>To Lowercase :</b> {{tolowcase | lowercase}}</p>
+        <hr>
+        <p><b>To Slice :</b> {{toSlice | slice:0:15}}...</p>
+
+        <p><b>To Slice :</b> {{toSlice | slice:0:15}}...</p>
+        <p><b>To JSON :</b> {{obj | json}}</p>
+
+        <hr>
+
+        <p><b>To Number :</b> {{toNumber | number:'3.3-4'}}</p>
+
+        <p> <b>Number :</b> {{1.1124578 | number:'2.2'}} </p>
+
+        <p> <b>To percentage :</b> {{0.50 | percent}} </p>
+
+        <p> <b>To Currency :</b> {{0.50 | currency:INR}} </p>
+
+        <p> <b>Currency :</b> {{price | currency:"GBP":"code"}}</p>
+<hr>
+
+        <p><b>Date : </b> {{dt | date:'medium'}} </p>
+
+      </div>
+      
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>

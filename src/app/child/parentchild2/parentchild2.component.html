@@ -1,0 +1,20 @@
+
+<div class="wrap_full wrap_padd_40 wrap_back_color_fff">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+            <p>
+                Parent Component {{iptext}}
+              </p>
+              
+              <input type="text" [(ngModel)]="iptext">
+        </div>
+        
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+
+
+<app-parentchild22 [parentvalue]="iptext"></app-parentchild22>

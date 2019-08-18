@@ -1,0 +1,17 @@
+
+<div class="wrap_full wrap_back_color_fff wrap_padd_50">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p>
+          ex1-parent1 works!
+        </p>
+        <input type="button" class="btn" value="PUSH"  (click)="increase()">
+        <br><br>
+        <p>{{count}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-ex1-child1 [receiveValue]="count " ></app-ex1-child1>
